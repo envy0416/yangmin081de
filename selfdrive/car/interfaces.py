@@ -45,7 +45,7 @@ class CarInterfaceBase():
     raise NotImplementedError
 
   @staticmethod
-  def get_params(candidate, fingerprint=gen_empty_fingerprint(), has_relay=true, car_fw=None):
+  def get_params(candidate, fingerprint=gen_empty_fingerprint(), has_relay=True, car_fw=None):
     raise NotImplementedError
 
   # returns a set of default params to avoid repetition in car specific params

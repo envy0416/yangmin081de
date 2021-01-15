@@ -101,7 +101,7 @@ class Android(HardwareBase):
   def uninstall(self):
     with open('/cache/recovery/command', 'w') as f:
       f.write('--wipe_data\n')
-    # IPowerManager.reboot(confirm=false, reason="recovery", wait=true)
+    # IPowerManager.reboot(confirm=false, reason="recovery", wait=True)
     self.reboot(reason="recovery")
 
   def get_sim_info(self):
